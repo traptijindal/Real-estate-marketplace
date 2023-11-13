@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import userRouter from  './routes/user.routes.js';
 import authRouter from  './routes/auth.routes.js';
+import cookieParser from 'cookie-parser';
 dotenv.config();
 mongoose.connect('mongodb+srv://trapti:trapti@real-estate.cqov1iw.mongodb.net/?retryWrites=true&w=majority').then(()=>{
     console.log("connected to MongoDB");
@@ -11,6 +12,9 @@ mongoose.connect('mongodb+srv://trapti:trapti@real-estate.cqov1iw.mongodb.net/?r
 });
 const app = express();
 app.use(express.json());
+
+app.use(cookieParser());
+
 app.listen(3000,() =>{
     console.log("Server is running on port 3000!");
 });
