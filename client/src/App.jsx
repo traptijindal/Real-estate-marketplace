@@ -9,7 +9,6 @@ import PrivateRoute from './components/PrivateRoute';
 import CreateListing from './pages/CreateListing';
 
 
-
 export default function App() {
   return( <BrowserRouter>
   <Header />
@@ -26,4 +25,7 @@ export default function App() {
   </BrowserRouter>
   );
 }
+
+
+
 
