@@ -214,9 +214,9 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.type === 'sale'}
               />
-              <span>Sell</span>
+              <span className='text-white'>Sell</span>
             </div>
-            <div className='flex gap-2'>
+            <div className='flex gap-2 text-white'>
               <input
                 type='checkbox'
                 id='rent'
@@ -226,7 +226,7 @@ export default function CreateListing() {
               />
               <span>Rent</span>
             </div>
-            <div className='flex gap-2'>
+            <div className='flex gap-2 text-white'>
               <input
                 type='checkbox'
                 id='parking'
@@ -236,7 +236,7 @@ export default function CreateListing() {
               />
               <span>Parking spot</span>
             </div>
-            <div className='flex gap-2'>
+            <div className='flex gap-2 text-white'>
               <input
                 type='checkbox'
                 id='furnished'
@@ -244,21 +244,21 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.furnished}
               />
-              <span>Furnished</span>
+              <span className='text-white'>Furnished</span>
             </div>
-            <div className='flex gap-2'>
+            <div className='flex gap-2 '>
               <input
                 type='checkbox'
                 id='offer'
-                className='w-5'
+                className='w-5 text-white'
                 onChange={handleChange}
                 checked={formData.offer}
               />
-              <span>Offer</span>
+              <span className='text-white'>Offer</span>
             </div>
           </div>
           <div className='flex flex-wrap gap-6'>
-            <div className='flex items-center gap-2'>
+            <div className='flex items-center gap-2 '>
               <input
                 type='number'
                 id='bedrooms'
@@ -269,22 +269,22 @@ export default function CreateListing() {
                 onChange={handleChange}
                 value={formData.bedrooms}
               />
-              <p>Beds</p>
+              <p className='text-white'>Beds</p>
             </div>
-            <div className='flex items-center gap-2'>
+            <div className='flex items-center gap-2 '>
               <input
                 type='number'
                 id='bathrooms'
                 min='1'
                 max='10'
                 required
-                className='p-3 border border-gray-300 rounded-lg'
+                className='p-3 border border-gray-300 rounded-lg '
                 onChange={handleChange}
                 value={formData.bathrooms}
               />
-              <p>Baths</p>
+              <p className='text-white'>Baths</p>
             </div>
-            <div className='flex items-center gap-2'>
+            <div className='flex items-center gap-2 '>
               <input
                 type='number'
                 id='regularPrice'
@@ -295,15 +295,15 @@ export default function CreateListing() {
                 onChange={handleChange}
                 value={formData.regularPrice}
               />
-              <div className='flex flex-col items-center'>
-                <p>Regular price</p>
+              <div className='flex flex-col items-center '>
+                <p className='text-white'>Regular price</p>
                 {formData.type === 'rent' && (
-                  <span className='text-xs'>($ / month)</span>
+                  <span className='text-xs text-white'>($ / month)</span>
                 )}
               </div>
             </div>
             {formData.offer && (
-              <div className='flex items-center gap-2'>
+              <div className='flex items-center gap-2 '>
                 <input
                   type='number'
                   id='discountPrice'
@@ -315,9 +315,9 @@ export default function CreateListing() {
                   value={formData.discountPrice}
                 />
                 <div className='flex flex-col items-center'>
-                  <p>Discounted price</p>
+                  <p className='text-white'>Discounted price</p>
                   {formData.type === 'rent' && (
-                    <span className='text-xs'>($ / month)</span>
+                    <span className='text-xs text-white'>($ / month)</span>
                   )}
                 </div>
               </div>
