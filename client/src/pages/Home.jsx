@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function Home() {
   return (
     <div>
@@ -28,7 +29,7 @@ export default function Home() {
         
         <div className="bg-white p-4 rounded-md shadow-md">
           <img
-            src="/newh1.webp"
+            src="./arrivaltoys.jpg"
             alt="Image 1"
             className="w-full h-40 object-cover rounded-md mb-4"
           />
@@ -39,7 +40,7 @@ export default function Home() {
         
         <div className="bg-white p-4 rounded-md shadow-md">
           <img
-            src="/newh1.webp"
+            src="./arrivaltoys.jpg"
             alt="Image 2"
             className="w-full h-40 object-cover rounded-md mb-4"
           />
@@ -50,7 +51,7 @@ export default function Home() {
         
         <div className="bg-white p-4 rounded-md shadow-md">
           <img
-            src="/newh1.webp"
+            src="./arrivaltoys.jpg"
             alt="Image 3"
             className="w-full h-40 object-cover rounded-md mb-4"
           />
@@ -61,7 +62,7 @@ export default function Home() {
        
         <div className="bg-white p-4 rounded-md shadow-md">
           <img
-            src="/newh1.webp"
+            src="./arrivaltoys.jpg"
             alt="Image 4"
             className="w-full h-40 object-cover rounded-md mb-4"
           />
